@@ -39,7 +39,7 @@ export const NavBar = () => {
       </div>
     </nav>
     <Outlet/>
-    <WhatsApp/>
+{/*     <WhatsApp/> */}
     </>
   );
 };

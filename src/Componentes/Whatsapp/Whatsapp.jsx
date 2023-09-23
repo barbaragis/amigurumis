@@ -1,5 +1,4 @@
-
-import "../Whatsapp/WhatsApp.css"
+/* import "../Whatsapp/WhatsApp.css"
 import { FaWhatsapp } from 'react-icons/fa';
 
 export const WhatsApp = () => {
@@ -10,4 +9,4 @@ export const WhatsApp = () => {
         </a>
       </div>
     );
-  } 
+  }  */
