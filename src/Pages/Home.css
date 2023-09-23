@@ -1,0 +1,114 @@
+
+
+.home__titulo{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 16px;
+}
+
+h3{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el contenedor del carousel */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Estilos para el carousel de imágenes */
+  .carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 300px; /* Ajusta el tamaño de las imágenes según tus preferencias */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.5s;
+  }
+  
+  /* Estilos para los botones de navegación */
+  .prev-button,
+  .next-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para las flechas */
+  .prev-button::before {
+    content: '\2190'; /* Código unicode para la flecha izquierda */
+  }
+  
+  .next-button::before {
+    content: '\2192'; /* Código unicode para la flecha derecha */
+  }
+  
+/* Estilos para la fila de imágenes */
+.fila-de-imagenes {
+  display: flex; /* Utilizamos flexbox para crear una fila */
+  justify-content: space-between; /* Espacio entre las imágenes */
+  align-items: center; /* Centra verticalmente las imágenes */
+}
+
+/* Estilos para cada imagen individual */
+.imagen {
+  flex: 1; /* Cada imagen ocupa el mismo espacio en la fila */
+  margin: 10px; /* Margen alrededor de cada imagen (ajusta según tus preferencias) */
+  position: relative; /* Para posicionar los títulos de manera absoluta */
+}
+
+/* Añade estilos adicionales según tus necesidades */
+.imagen img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste a su contenedor */
+  height: auto; /* Evita la deformación de la imagen */
+}
+
+/* Estilos para los títulos */
+.imagen h3 {
+  position: absolute; /* Posición absoluta en relación con su contenedor .imagen */
+  bottom: 10px; /* Espacio desde la parte inferior de la imagen */
+  left: 0; /* Alinea el título a la izquierda de la imagen */
+  right: 0; /* Alinea el título a la derecha de la imagen */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el título */
+  color: #fff; /* Color de texto blanco */
+  padding: 5px; /* Espaciado interior del título */
+  margin: 0; /* Elimina el margen predeterminado */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+
+/* Estilos para centrar el banner en el medio de la página */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* Ajusta esto para centrar verticalmente en función de la altura de la ventana */
+  }
+  
+  /* Estilos para el banner */
+  .home__banner {
+    width: 50%;
+  }
+  
+  /* Estilos para el enlace dentro del banner */
+  .home__banner a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del banner */
+    text-decoration: none; /* Quita la subrayado del enlace */
+  }
+  
+  /* Estilos para la imagen del banner */
+  .home__banner img {
+    width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
+    height: 500px; /* Evita la deformación de la imagen */
+  }
+  
+

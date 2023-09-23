@@ -1,0 +1,16 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: green; /* Cambia el color de fondo según tu preferencia */
+    color: white; /* Cambia el color del ícono según tu preferencia */
+    width: 50px;
+    height: 50px;
+    border-radius: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+  }
+  
