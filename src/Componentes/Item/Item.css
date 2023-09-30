@@ -1,4 +1,6 @@
-
+.item{
+  text-align: center;
+}
 .producto__card{
   width: 350px;
   height: 400px;
@@ -19,25 +21,31 @@
 }
 .producto__imagen{
   width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-  height: 250px; /* Altura fija para todas las imágenes (ajusta según tus necesidades) */
+  height: 300px; /* Altura fija para todas las imágenes (ajusta según tus necesidades) */
   border-radius: 8px;
   margin-bottom: 10px;
   object-fit: cover; 
+  padding: 16px;
 }
+
+
 
 .producto__titulo{
   color: black;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .producto__categoria{
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(213, 189, 175);
 }
 
 
 .producto__boton{
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   background-color: black;
   color: white;
@@ -49,10 +57,3 @@
   cursor: pointer;
 }
 
-.producto__boton:hover{
-  background-color: #A4C3B2;
-}
-
-.producto__boton:active{
-  background-color: #367c39;
-}

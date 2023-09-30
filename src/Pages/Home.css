@@ -64,7 +64,14 @@ h3{
   flex: 1; /* Cada imagen ocupa el mismo espacio en la fila */
   margin: 10px; /* Margen alrededor de cada imagen (ajusta según tus preferencias) */
   position: relative; /* Para posicionar los títulos de manera absoluta */
+  transition: transform 0.2s;
 }
+
+.imagen:hover {
+  transform: scale(1.01); /* Cambia el tamaño del elemento al pasar el ratón por encima */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+}
+
 
 /* Añade estilos adicionales según tus necesidades */
 .imagen img {
@@ -157,6 +164,6 @@ h3{
 
 /* Estilos para la imagen del banner */
 .home__banner img {
-  width: 80%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
+  width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
   height: auto; /* Evita la deformación de la imagen */
 }
