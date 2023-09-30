@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import "../Pages/Detail.css"
 import { getProducto } from "../../lib/amigus.requests";
 import { useNavigate, useParams } from "react-router-dom";
-import ImageCarousel from "../Componentes/ImageCarousel/ImageCarousel";
+import ImageCarousel from "../Componentes/ImageCarousel/ImageCarouse";
 
 
 const WhatsAppButton = () => {
@@ -19,7 +19,7 @@ const WhatsAppButton = () => {
   
     return (
       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-        <button>Consultar en WhatsApp</button>
+        <button className="detail-button">Contactar</button>
       </a>
     );
   };
@@ -46,10 +46,12 @@ export const Detail = () => {
             </div>
             <div className="detail-info">
             <h2>{producto.title} </h2>
-            <p> {producto.description} </p>
-            <span> IMPORTANTE: Los muñecos se hacen a pedido, no contamos con stock. Podés consultar tiempos de entrega actuales por WhatsApp o mail </span>
-            <p>Cualquier consulta no dudes en comunicarte a cualquiera de nuestras opciones de contacto!</p>
+            <span> {producto.description} </span>
+            <p className="detail-span"> IMPORTANTE: Los muñecos se hacen a pedido, no contamos con stock. 
+            <br></br> Podés consultar tiempos de entrega actuales por WhatsApp o mail </p>
+            <div>
             <WhatsAppButton />
+            </div>
             </div>
             </div>
         </>

@@ -1,3 +1,9 @@
 .footer{
     font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width: 768px) {
+    .footer{
+        font-size: 12px;
+    }
+}

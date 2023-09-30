@@ -15,7 +15,7 @@ export const Item = ({
           <img src={img} class="producto__imagen" alt="..."/>
           <h5 className="producto__titulo">{title}</h5>
           <p className="producto__categoria">{category}</p>
-          <button  className="producto__boton">Ver detalle</button>
+          <button  className="producto__boton">Ver más </button>
         </div>
 
     )

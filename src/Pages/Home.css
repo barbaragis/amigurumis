@@ -13,51 +13,47 @@ h3{
 }
 
 /* Estilos para el contenedor del carousel */
-.carousel-contain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  /* Estilos para el carousel de imágenes */
-  .carousel1 {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .carousel img {
-    width: 300px; /* Ajusta el tamaño de las imágenes según tus preferencias */
-    height: auto;
-    margin: 0 10px;
-    transition: transform 0.5s;
-  }
-  
-  /* Estilos para los botones de navegación */
-  .prev-button,
-  .next-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para las flechas */
-  .prev-button::before {
-    content: '\2190'; /* Código unicode para la flecha izquierda */
-  }
-  
-  .next-button::before {
-    content: '\2192'; /* Código unicode para la flecha derecha */
-  }
-  
+.carousel1 {
+  display: flex;
+  overflow: hidden;
+  justify-content: center; /* Centra horizontalmente el carrusel */
+  align-items: center; /* Centra verticalmente el carrusel */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+  text-align: center; /* Centra el contenido de cada imagen */
+}
+
+.carousel img {
+  width: 300px; /* Ajusta el tamaño de las imágenes según tus preferencias */
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.5s;
+}
+
+/* Estilos para los botones de navegación */
+.prev-button,
+.next-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos para las flechas */
+.prev-button::before {
+  content: '\2190'; /* Código unicode para la flecha izquierda */
+}
+
+.next-button::before {
+  content: '\2192'; /* Código unicode para la flecha derecha */
+}
+
 /* Estilos para la fila de imágenes */
 .fila-de-imagenes {
   display: flex;
   flex-direction: row; /* Utilizamos flexbox para crear una fila */
   justify-content: center; /* Espacio entre las imágenes */
-  align-items: center; /* Centra verticalmente las imágenes */
+  align-items: center; 
+/* Centra verticalmente las imágenes */
 }
 
 /* Estilos para cada imagen individual */
@@ -123,16 +119,27 @@ h3{
 
 /* Estilos para la fila de imágenes en dispositivos móviles */
 @media (max-width: 768px) {
+
+  .home__titulo{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 16px;
+}
+
+  .carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    margin: 10px 0; /* Espacio entre las imágenes en dispositivos móviles */
+  }
   .fila-de-imagenes {
-    display: flex;
-    flex-direction: row; /* Utilizamos flexbox para crear una fila */
-    justify-content: center; /* Espacio entre las imágenes */
-    align-items: center; /* Centra verticalmente las imágenes */
+    flex-direction: row; /* Mantenemos la dirección de fila en pantallas pequeñas */
   }
   
+  /* Ajusta el ancho de las imágenes para que ocupen el 50% del contenedor en móviles */
   .imagen {
-    flex-basis: calc(60% - 40px); /* Cambia el tamaño de las imágenes a 50% con menos margen */
+    flex-basis: calc(50% - 20px);
   }
+
 /* Estilos para centrar el banner en el medio de la página */
 .center-container {
   display: flex;

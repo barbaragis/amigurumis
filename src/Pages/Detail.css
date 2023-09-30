@@ -14,6 +14,11 @@
     padding: 20px;
 }
 
+.detail-info span{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .detail-info h2{
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
@@ -21,6 +26,17 @@
     font-weight: 600;
 }
 
+.detail-span{
+    color: gray;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.detail-button{
+    margin-top: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 /* Estilos para el contenedor del carrusel */
 .image-carousel-container {
     width: 70%; /* O ajusta el ancho según tus necesidades */
@@ -38,7 +54,7 @@
   /* Estilos para las imágenes dentro del carrusel */
   .carousel img {
     max-width: 70%; /* Ajusta el ancho máximo al 100% del contenedor */
-    max-height: 500px; /* Define una altura máxima para todas las imágenes */
+    max-height: 400px; /* Define una altura máxima para todas las imágenes */
     width: auto; /* Ajusta automáticamente el ancho según el alto máximo */
     height: auto; /* Ajusta automáticamente la altura según el ancho máximo */
   }
@@ -59,28 +75,44 @@
     background-color: #007BFF; /* Color de los puntos de navegación activos */
   }
   
-
-  @media (max-width: 768px) {
+  /* Estilos para el contenedor de detalles en dispositivos móviles */
+@media screen and (max-width: 768px) {
     .detail-container {
-      flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
-      text-align: center; /* Centra el contenido */
+      flex-direction: column; /* Cambiamos a una columna en pantallas pequeñas */
     }
   
     .detail img {
-      width: 100%; /* Ajusta el ancho al 100% del contenedor */
-      height: auto;
-      max-height: none; /* Elimina la altura máxima para permitir imágenes más grandes */
+      width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+      height: auto; /* Ajusta automáticamente la altura según el ancho */
+      margin-bottom: 10px; /* Espacio entre la imagen y la información en móviles */
     }
   
     .detail-info {
-      padding: 10px; /* Reduce el espaciado */
+        text-align: center;
+      padding: 10px; /* Reduce el espacio alrededor de la información en móviles */
     }
   
-    .carousel {
-      max-width: 80%; /* Reduce el ancho del carrusel */
+    .detail-info h2 {
+      font-size: 14px; /* Reducimos el tamaño de la fuente en móviles */
+    }
+  
+    /* Estilos para el carrusel en dispositivos móviles */
+    .image-carousel-container {
+      width: 100%; /* Ancho del 100% para ocupar todo el ancho del dispositivo */
     }
   
     .carousel img {
-      max-height: 400px; /* Reduce la altura máxima de las imágenes */
+      max-width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+      max-height: 300px; /* Define una altura máxima para las imágenes del carrusel */
     }
   }
+  
+  .detail-span{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.detail-button{
+    font-size: 14px;
+    margin-top: 16px;
+}
