@@ -28,8 +28,6 @@
   padding: 16px;
 }
 
-
-
 .producto__titulo{
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -57,3 +55,33 @@
   cursor: pointer;
 }
 
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .producto__card {
+    width: 100%; /* Ocupar el 100% del ancho del dispositivo móvil */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    margin-bottom: 10px; /* Espaciado inferior reducido */
+    padding: 8px; /* Espaciado interno reducido */
+  }
+
+  .producto__imagen {
+    width: 100%;
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 0; /* Sin borde redondeado en dispositivos móviles */
+    margin-bottom: 5px; /* Espaciado inferior reducido */
+    padding: 8px; /* Espaciado interno reducido */
+  }
+
+  .producto__titulo {
+    font-size: 12px; /* Tamaño de fuente reducido */
+  }
+
+  .producto__categoria {
+    font-size: 10px; /* Tamaño de fuente reducido */
+  }
+
+  .producto__boton {
+    font-size: 12px; /* Tamaño de fuente reducido */
+    padding: 8px 16px; /* Espaciado reducido en el botón */
+  }
+}

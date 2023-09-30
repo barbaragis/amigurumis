@@ -54,14 +54,15 @@ h3{
   
 /* Estilos para la fila de imágenes */
 .fila-de-imagenes {
-  display: flex; /* Utilizamos flexbox para crear una fila */
-  justify-content: space-between; /* Espacio entre las imágenes */
+  display: flex;
+  flex-direction: row; /* Utilizamos flexbox para crear una fila */
+  justify-content: center; /* Espacio entre las imágenes */
   align-items: center; /* Centra verticalmente las imágenes */
 }
 
 /* Estilos para cada imagen individual */
 .imagen {
-  flex: 1; /* Cada imagen ocupa el mismo espacio en la fila */
+  flex-basis: calc(50% - 20px); /* Cada imagen ocupa el 50% del contenedor con margen */
   margin: 10px; /* Margen alrededor de cada imagen (ajusta según tus preferencias) */
   position: relative; /* Para posicionar los títulos de manera absoluta */
   transition: transform 0.2s;
@@ -123,32 +124,15 @@ h3{
 /* Estilos para la fila de imágenes en dispositivos móviles */
 @media (max-width: 768px) {
   .fila-de-imagenes {
-      flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
-      align-items: center; /* Centra verticalmente las imágenes */
+    display: flex;
+    flex-direction: row; /* Utilizamos flexbox para crear una fila */
+    justify-content: center; /* Espacio entre las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
   }
-
-  /* Estilos para cada imagen individual en dispositivos móviles */
+  
   .imagen {
-      flex: 1; /* Cada imagen ocupa el mismo espacio en la columna */
-      margin: 10px; /* Margen alrededor de cada imagen (ajusta según tus preferencias) */
-      position: relative; /* Para posicionar los títulos de manera absoluta */
-      text-align: center;
+    flex-basis: calc(60% - 40px); /* Cambia el tamaño de las imágenes a 50% con menos margen */
   }
-
-  /* Estilos para los títulos en dispositivos móviles */
-  .imagen h3 {
-      position: relative; /* Restaura la posición relativa para el título */
-      bottom: auto; /* Restaura la posición inferior predeterminada */
-      left: auto; /* Restaura la posición izquierda predeterminada */
-      right: auto; /* Restaura la posición derecha predeterminada */
-      background-color: transparent; /* Quita el fondo semitransparente para el título */
-      color: #333; /* Cambia el color del texto */
-      padding: 5px; /* Espaciado interior del título */
-      margin: 0; /* Elimina el margen predeterminado */
-      text-align: center; /* Alinea el texto al centro */
-  }
-}
-
 /* Estilos para centrar el banner en el medio de la página */
 .center-container {
   display: flex;
@@ -156,6 +140,20 @@ h3{
   align-items: center;
   /* Ajusta esto para centrar verticalmente en función de la altura de la ventana */
 }
+
+.imagen h3 {
+  font-size: 10px;
+  position: absolute; /* Posición absoluta en relación con su contenedor .imagen */
+  bottom: 10px; /* Espacio desde la parte inferior de la imagen */
+  left: 0; /* Alinea el título a la izquierda de la imagen */
+  right: 0; /* Alinea el título a la derecha de la imagen */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el título */
+  color: #fff; /* Color de texto blanco */
+  padding: 5px; /* Espaciado interior del título */
+  margin: 0; /* Elimina el margen predeterminado */
+  text-align: center; /* Alinea el texto al centro */
+}
+
 
 /* Estilos para el banner */
 .home__banner {
@@ -166,4 +164,4 @@ h3{
 .home__banner img {
   width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
   height: auto; /* Evita la deformación de la imagen */
-}
+}}
