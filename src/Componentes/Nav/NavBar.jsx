@@ -1,7 +1,11 @@
 
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import "../Nav/NavBar.css"
+import "../Nav/NavBar.css";
+import { FaWhatsapp } from "react-icons/fa";
+
+
+
 
 
 
@@ -39,7 +43,17 @@ export const NavBar = () => {
         </div>
       </div>
     </nav>
+    <div className="whatsapp-button">
+  <a
+    href="https://wa.me/12345"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaWhatsapp size={30} color="white" />
+  </a>
+</div>
     <Outlet/>
+    
     </>
   );
 };
