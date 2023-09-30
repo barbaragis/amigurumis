@@ -2,7 +2,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import "../Nav/NavBar.css"
-import { WhatsApp } from "../Whatsapp/Whatsapp";
 
 
 
@@ -12,7 +11,7 @@ export const NavBar = () => {
    
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-      <Link className="navbar-brand"to={"/"}><img className="logo" src="https://t4.ftcdn.net/jpg/04/54/38/75/360_F_454387542_psZUYHJKoMOcZOTpf9tXbl4epKK9vnWK.jpg" /></Link>
+      <Link className="navbar-brand"to={"/"}><img className="logo" src="https://t4.ftcdn.net/jpg/04/54/38/75/360_F_454387542_psZUYHJKoMOcZOTpf9tXbl4epKK9vnWK.jpg" /> </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -23,8 +22,9 @@ export const NavBar = () => {
                 CATEGORIAS
               </a>
               <ul className="dropdown-menu">
-              <Link className="dropdown-item" to="/category/peliculas">PELICULAS</Link>
-                <Link className="dropdown-item" to="/category/series">SERIES</Link>
+              <Link className="dropdown-item" to="/category/peliculas">PELICULAS Y SERIES</Link>
+                <Link className="dropdown-item" to="/category/starwars">STAR WARS </Link>
+               <Link className="dropdown-item" to="/category/videojuegos">VIDEOJUEGOS</Link>
                <Link className="dropdown-item" to="/category/mantas">MANTAS</Link>
                <Link className="dropdown-item" to="/category/varios">VARIOS</Link>
               </ul>
@@ -39,7 +39,6 @@ export const NavBar = () => {
       </div>
     </nav>
     <Outlet/>
-{/*     <WhatsApp/> */}
     </>
   );
 };

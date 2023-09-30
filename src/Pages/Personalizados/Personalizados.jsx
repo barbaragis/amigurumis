@@ -1,10 +1,13 @@
+import "../Personalizados/Personalizados.css";
+
+
 export const Personalizados = () => {
     return(
-        <>
+        <div className="personalizados">
         <div>
-            <h2> Amigurumis personalizados</h2>
+            <h2 className="personalizados__titulo"> Amigurumis personalizados</h2>
         </div>
-        <div>
+        <div >
             <span>¿Cómo encargo un amigurumi personalizado?</span>
             <p>Para encargar tu personalizado podés escribirme a cualquiera de los medios de contacto (WhatsApp, Mail, redes sociales), indicando:</p>
             <ul>
@@ -15,6 +18,6 @@ export const Personalizados = () => {
             </ul>
         </div>
         <p> Cuanta más información tengas, será más útil para mí, ya que me permitirá comprender tu idea de la manera más completa posible.</p>
-        </>
+        </div>
     )
 }

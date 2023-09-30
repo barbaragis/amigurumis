@@ -47,9 +47,9 @@ export const Home = () => {
         <div className="fila-de-imagenes">
           <div class="imagen">
             <img src="https://www.alwaysfreeamigurumi.com/wp-content/uploads/2021/04/always_free_ami_Pikachu_020421_1.jpg" alt="Imagen 1" /> 
-            <h3 > Peliculas </h3>
+            <h3 > Peliculas y series </h3>
           </div>
-        <div class="imagen"><img src="https://d22fxaf9t8d39k.cloudfront.net/086afe6687dd00bdb0b4c247299a3802e55ff76bbc485dd7df76a4f9f57b679a1453.jpeg" alt="Imagen 3"/> <h3> Series</h3> </div>
+        <div class="imagen"><img src="https://d22fxaf9t8d39k.cloudfront.net/086afe6687dd00bdb0b4c247299a3802e55ff76bbc485dd7df76a4f9f57b679a1453.jpeg" alt="Imagen 3"/> <h3> Star Wars</h3> </div>
         <div class="imagen">
             <img src="https://falabella.scene7.com/is/image/FalabellaPE/17797818_1?wid=1500&hei=1500&qlt=70" alt="Imagen 1" /> 
             <h3> Mantas</h3>
@@ -60,11 +60,11 @@ export const Home = () => {
           </div>
     </div>
     <div className="center-container">
-  <div className="home__banner">
+  {/* <div className="home__banner">
     <a href="https://www.instagram.com/pavi_s_amigurumi/" target="_blank" rel="noopener noreferrer">
       <img src="" alt="Banner de Instagram" />
     </a>
-  </div>
+  </div> */}
 </div>
 <h2 className="home__titulo"> Todos los amigurumis </h2>
 <ItemListContainer products={products} />

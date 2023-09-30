@@ -112,3 +112,51 @@ h3{
   }
   
 
+
+/* Estilos para la fila de imágenes en dispositivos móviles */
+@media (max-width: 768px) {
+  .fila-de-imagenes {
+      flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+      align-items: center; /* Centra verticalmente las imágenes */
+  }
+
+  /* Estilos para cada imagen individual en dispositivos móviles */
+  .imagen {
+      flex: 1; /* Cada imagen ocupa el mismo espacio en la columna */
+      margin: 10px; /* Margen alrededor de cada imagen (ajusta según tus preferencias) */
+      position: relative; /* Para posicionar los títulos de manera absoluta */
+      text-align: center;
+  }
+
+  /* Estilos para los títulos en dispositivos móviles */
+  .imagen h3 {
+      position: relative; /* Restaura la posición relativa para el título */
+      bottom: auto; /* Restaura la posición inferior predeterminada */
+      left: auto; /* Restaura la posición izquierda predeterminada */
+      right: auto; /* Restaura la posición derecha predeterminada */
+      background-color: transparent; /* Quita el fondo semitransparente para el título */
+      color: #333; /* Cambia el color del texto */
+      padding: 5px; /* Espaciado interior del título */
+      margin: 0; /* Elimina el margen predeterminado */
+      text-align: center; /* Alinea el texto al centro */
+  }
+}
+
+/* Estilos para centrar el banner en el medio de la página */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Ajusta esto para centrar verticalmente en función de la altura de la ventana */
+}
+
+/* Estilos para el banner */
+.home__banner {
+  width: 50%;
+}
+
+/* Estilos para la imagen del banner */
+.home__banner img {
+  width: 80%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
+  height: auto; /* Evita la deformación de la imagen */
+}

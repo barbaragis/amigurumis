@@ -5,7 +5,8 @@ import { NavBar } from "./Componentes/Nav/NavBar";
 import { Home } from "./Pages/Home";
 import { Detail } from "./Pages/Detail";
 import {Footer} from "./Componentes/Footer/Footer"
-import { Personalizados } from "./Pages/Personalizados";
+import { Personalizados } from "./Pages/Personalizados/Personalizados";
+import {Contacto} from "./Pages/Contacto/Contacto"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/item/:id" element={<Detail />} />
           <Route path="/category/:id" element={<div>categoria</div>} />
           <Route path="/personalizados" element={<Personalizados/>} />
+          <Route path="/contacto" element={<Contacto/>} />
         </Routes>
       </div>
     </Router>
