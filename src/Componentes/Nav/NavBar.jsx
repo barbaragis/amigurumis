@@ -11,7 +11,8 @@ export const NavBar = () => {
    
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-      <Link className="navbar-brand"to={"/"}><img className="logo" src="https://t4.ftcdn.net/jpg/04/54/38/75/360_F_454387542_psZUYHJKoMOcZOTpf9tXbl4epKK9vnWK.jpg" /> </Link>
+      <Link className="navbar-brand"to={"/"}>
+        <img className="logo" src="https://t4.ftcdn.net/jpg/04/54/38/75/360_F_454387542_psZUYHJKoMOcZOTpf9tXbl4epKK9vnWK.jpg" /> </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

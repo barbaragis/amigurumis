@@ -67,7 +67,7 @@ export const Home = () => {
   </div> */}
 </div>
 <h2 className="home__titulo"> Todos los amigurumis </h2>
-<ItemListContainer products={products} />
+  <ItemListContainer products={products} />
         </>
    )
 }

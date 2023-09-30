@@ -13,7 +13,7 @@ h3{
 }
 
 /* Estilos para el contenedor del carousel */
-.carousel-container {
+.carousel-contain {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ h3{
   }
   
   /* Estilos para el carousel de imágenes */
-  .carousel {
+  .carousel1 {
     display: flex;
     overflow: hidden;
   }
